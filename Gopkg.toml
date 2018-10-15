@@ -60,7 +60,7 @@ ignored = ["k8s.io/client-go/pkg/api/v1"]
  version = "1.11.1"
 
 [[constraint]]
- version = "v1.6.0"
+ version = "v2.6.0"
  name = "github.com/oracle/oci-go-sdk"
 
 [[override]]

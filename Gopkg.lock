@@ -259,7 +259,7 @@
   version = "v1.0.0-rc1"
 
 [[projects]]
-  digest = "1:70df8e71a953626770223d4982801fa73e7e99cbfcca068b95127f72af9b9edd"
+  digest = "1:6997709b270a10abbc7ef1e95b225c618b1d4fe8b752308a3db8e10aaec4d06c"
   name = "github.com/oracle/oci-go-sdk"
   packages = [
     "common",
@@ -269,8 +269,8 @@
     "identity",
   ]
   pruneopts = ""
-  revision = "a2ded717dc4bb4916c0416ec79f81718b576dbc4"
-  version = "v1.8.0"
+  revision = "37ec848b9622efd149232580c77a7a168f0f35ef"
+  version = "v2.6.0"
 
 [[projects]]
   digest = "1:a5484d4fa43127138ae6e7b2299a6a52ae006c7f803d98d717f60abf3e97192e"
@@ -357,7 +357,7 @@
   version = "v1.0.2"
 
 [[projects]]
-  digest = "1:74f86c458e82e1c4efbab95233e0cf51b7cc02dc03193be9f62cd81224e10401"
+  digest = "0:"
   name = "go.uber.org/atomic"
   packages = ["."]
   pruneopts = ""
@@ -365,7 +365,7 @@
   version = "v1.3.2"
 
 [[projects]]
-  digest = "1:22c7effcb4da0eacb2bb1940ee173fac010e9ef3c691f5de4b524d538bd980f5"
+  digest = "0:"
   name = "go.uber.org/multierr"
   packages = ["."]
   pruneopts = ""
@@ -373,7 +373,7 @@
   version = "v1.1.0"
 
 [[projects]]
-  digest = "1:246f378f80fba6fcf0f191c486b6613265abd2bc0f2fa55a36b928c67352021e"
+  digest = "0:"
   name = "go.uber.org/zap"
   packages = [
     ".",
@@ -381,34 +381,11 @@
     "internal/bufferpool",
     "internal/color",
     "internal/exit",
+    "internal/ztest",
     "zapcore",
+    "zaptest",
   ]
   pruneopts = ""
-  revision = "ff33455a0e382e8a81d14dd7c922020b6b5e7982"
-  version = "v1.9.1"
-
-[[projects]]
-  name = "go.uber.org/atomic"
-  packages = ["."]
-  revision = "1ea20fb1cbb1cc08cbd0d913a96dead89aa18289"
-  version = "v1.3.2"
-
-[[projects]]
-  name = "go.uber.org/multierr"
-  packages = ["."]
-  revision = "3c4937480c32f4c13a875a1829af76c98ca3d40a"
-  version = "v1.1.0"
-
-[[projects]]
-  name = "go.uber.org/zap"
-  packages = [
-    ".",
-    "buffer",
-    "internal/bufferpool",
-    "internal/color",
-    "internal/exit",
-    "zapcore"
-  ]
   revision = "ff33455a0e382e8a81d14dd7c922020b6b5e7982"
   version = "v1.9.1"
 
@@ -512,6 +489,14 @@
   pruneopts = ""
   revision = "d2d2541c53f18d2a059457998ce2876cc8e67cbf"
   version = "v0.9.1"
+
+[[projects]]
+  digest = "1:11c58e19ff7ce22740423bb933f1ddca3bf575def40d5ac3437ec12871b1648b"
+  name = "gopkg.in/natefinch/lumberjack.v2"
+  packages = ["."]
+  pruneopts = ""
+  revision = "a96e63847dc3c67d17befa69c303767e2f84e54f"
+  version = "v2.1"
 
 [[projects]]
   digest = "1:ddc5fa8f9159bea7d1ce58143e6d8fd8054018f7bc3709940aa7f7bc92855ed9"
@@ -866,7 +851,6 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/golang/glog",
     "github.com/kubernetes-incubator/external-storage/lib/controller",
     "github.com/onsi/ginkgo",
     "github.com/onsi/gomega",
@@ -876,6 +860,10 @@
     "github.com/oracle/oci-go-sdk/filestorage",
     "github.com/oracle/oci-go-sdk/identity",
     "github.com/pkg/errors",
+    "go.uber.org/zap",
+    "go.uber.org/zap/zapcore",
+    "go.uber.org/zap/zaptest",
+    "gopkg.in/natefinch/lumberjack.v2",
     "gopkg.in/yaml.v2",
     "k8s.io/api/apps/v1beta1",
     "k8s.io/api/core/v1",
